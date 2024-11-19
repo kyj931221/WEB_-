@@ -6,6 +6,70 @@
     <title>Unity WebGL Player | ForAOU</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
+    <!-- ==================== 추가된 스타일 ==================== -->
+    <style>
+      /* 전체 컨테이너 스타일 */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      #unity-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 100px auto; /* 상단 간격 */
+        text-align: center;
+      }
+
+      #unity-canvas {
+        display: block;
+        margin: 0 auto;
+        background-color: #000; /* 검정 배경 */
+      }
+
+      /* 설명문 스타일 */
+      .description-container {
+        max-width: 960px;
+        margin: 50px auto; /* 상하 간격 */
+        padding: 30px;
+        background: linear-gradient(135deg, #84fab0, #8fd3f4); /* 파란-초록 그라디언트 */
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      .description-container h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      .description-container p {
+        font-size: 18px;
+        line-height: 1.8;
+      }
+      .description-container p span {
+        font-weight: bold;
+        color: #ffdd00; /* 강조 텍스트 색상 */
+      }
+
+      /* 애니메이션 효과 */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <!-- ==================== 추가된 스타일 ==================== -->
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -23,6 +87,20 @@
         <div id="unity-build-title">ForAOU</div>
       </div>
     </div>
+
+    <!-- ==================== 추가된 설명 섹션 시작 ==================== -->
+    <div class="description-container">
+      <h2>달로 향하자! For all of Us.</h2>
+      <p>
+        <span>"달로 향하자!"</span>는 숨겨진 함정을 피해서 목표로 향하는 2D 플랫포머 게임입니다.
+      </p>
+      <p>
+        함정을 피해서 얼마나 빨리 올라가는지 도전할 수 있습니다. <br>
+        지금 바로 시작하세요!
+      </p>
+    </div>
+    <!-- ==================== 추가된 설명 섹션 끝 ==================== -->
+    
     <script>
 
       var container = document.querySelector("#unity-container");
